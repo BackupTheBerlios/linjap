@@ -66,6 +66,11 @@ list<Word>* LList::get(int chap, int part)
 
 Data* LList::get_data()
 {
+  if (params[0] == 0 && params[1] == 0) {
+    cout << "Returning NULL" << endl;
+    return NULL;
+  }
+
   int x, y;
   LListNode *ce = head;
   Data *rdata = new Data(params[0] + 1, params[1] + 2);

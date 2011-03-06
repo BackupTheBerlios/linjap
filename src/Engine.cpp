@@ -47,6 +47,7 @@ ustring* Engine::next(ustring last)
 
 bool Engine::has_next()
 {
+  cout << "Engine::HAS_NEXT" << endl;
   return mod->has_next();
 }
 

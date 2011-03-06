@@ -68,7 +68,7 @@ void Mode::new_session(vector<Av> in)
 
 bool Mode::has_next()
 {
-  if (session->size() > 0 || last != NULL) {
+  if ((session != NULL && session->size() > 0) || last != NULL) {
     return true;
   } else {
     return false;

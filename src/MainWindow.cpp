@@ -192,6 +192,7 @@ void MainWindow::on_new_session()
     
     delete nwindow;
     nwindow = 0;
+    if (!en->has_next()) return;
     
     delete ok_button;
     ok_button = new Button(Gtk::Stock::OK);
